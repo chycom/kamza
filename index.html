@@ -3,1161 +3,1221 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Profil KAMZA - Kampung Zakat Terpadu Dusun Paceh, Desa Jambearum, Sumberjambe, Jember." />
-  <title>Profil KAMZA - Kampung Zakat Terpadu Dusun Paceh</title>
+  <meta name="description" content="KAMZA — Kampung Zakat Terpadu Dusun Paceh, Desa Jambearum, Sumberjambe, Jember. Zakat, infak, dan sedekah warga dikelola menjadi pendidikan, ekonomi keluarga, dan layanan sosial yang tepat sasaran." />
+  <title>KAMZA — Kampung Zakat Terpadu Dusun Paceh, Jember</title>
+
+  <!-- Saat situs sudah online, isi og:url dan og:image dengan domain lengkap,
+       contoh: https://kamza.example/assets/hero.jpg -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="id_ID" />
+  <meta property="og:site_name" content="KAMZA" />
+  <meta property="og:title" content="KAMZA — Kampung Zakat Terpadu Dusun Paceh" />
+  <meta property="og:description" content="Zakat, infak, dan sedekah warga Dusun Paceh dikelola menjadi pendidikan, ekonomi keluarga, dan layanan sosial yang tepat sasaran." />
+  <meta property="og:image" content="assets/hero.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="theme-color" content="#0e3a25" />
+
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Petrona:ital,wght@0,500;0,600;0,700;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NGO",
+    "name": "KAMZA — Kampung Zakat Terpadu Dusun Paceh",
+    "foundingDate": "2018-03-15",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Dusun Paceh, Desa Jambearum",
+      "addressLocality": "Kecamatan Sumberjambe",
+      "addressRegion": "Kabupaten Jember, Jawa Timur",
+      "addressCountry": "ID"
+    },
+    "parentOrganization": "Kantor Kementerian Agama Kabupaten Jember"
+  }
+  </script>
 
   <style>
     :root {
-      --navy: #001f6b;
-      --navy-2: #04328f;
-      --green: #229c4a;
-      --green-dark: #177637;
-      --green-soft: #eaf7ee;
-      --gold: #f7c948;
-      --ink: #14213d;
-      --muted: #657083;
-      --line: #dfe8e3;
-      --paper: #ffffff;
-      --bg: #f6faf8;
-      --radius-xl: 28px;
-      --radius-lg: 20px;
-      --radius-md: 14px;
-      --shadow-sm: 0 10px 30px rgba(0, 31, 107, 0.08);
-      --shadow-md: 0 18px 55px rgba(0, 31, 107, 0.13);
-      --shadow-green: 0 18px 45px rgba(34, 156, 74, 0.18);
-      --container: 1140px;
-      --ease: 220ms ease;
+      --cobalt: #1c3aa6;
+      --cobalt-tua: #142a78;
+      --hijau: #1a9a4c;
+      --hijau-taut: #157a3c;
+      --hijau-tua: #0e3a25;
+      --hijau-malam: #092a1a;
+      --emas: #c99a2e;
+      --kertas: #f4f6f1;
+      --putih: #ffffff;
+      --tinta: #132018;
+      --abu: #55645a;
+      --garis: #d9e0d5;
+      --wrap: 1120px;
     }
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
 
     html {
       scroll-behavior: smooth;
-      scroll-padding-top: 95px;
+      scroll-padding-top: 86px;
     }
 
     body {
-      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background:
-        radial-gradient(circle at top left, rgba(34, 156, 74, 0.11), transparent 34rem),
-        linear-gradient(180deg, #f8fcfa 0%, #eef7f2 100%);
-      color: var(--ink);
+      font-family: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+      background: var(--kertas);
+      color: var(--tinta);
       line-height: 1.75;
+      font-size: 1rem;
       overflow-x: hidden;
     }
 
-    img {
-      max-width: 100%;
-      display: block;
+    img { max-width: 100%; height: auto; display: block; }
+    a { color: inherit; }
+
+    .wrap {
+      width: min(92%, var(--wrap));
+      margin-inline: auto;
     }
 
-    a {
-      color: inherit;
+    ::selection { background: rgba(26, 154, 76, .25); }
+
+    :is(a, button, summary):focus-visible {
+      outline: 2px solid var(--hijau-taut);
+      outline-offset: 3px;
+      border-radius: 3px;
     }
 
-    .site-header {
+    .skip {
+      position: absolute;
+      left: 16px;
+      top: -48px;
+      z-index: 100;
+      background: var(--putih);
+      color: var(--tinta);
+      padding: 10px 16px;
+      font-weight: 700;
+      text-decoration: none;
+      border: 1px solid var(--garis);
+      transition: top 150ms ease;
+    }
+    .skip:focus { top: 12px; }
+
+    /* ---------- header ---------- */
+    .topbar {
       position: sticky;
       top: 0;
-      z-index: 50;
-      background: rgba(255, 255, 255, 0.88);
-      backdrop-filter: blur(18px);
-      border-bottom: 1px solid rgba(0, 31, 107, 0.08);
-      box-shadow: 0 6px 22px rgba(0, 31, 107, 0.06);
+      z-index: 60;
+      background: rgba(244, 246, 241, .92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--garis);
     }
 
-    .nav-wrap {
-      width: min(92%, var(--container));
-      margin: 0 auto;
-      min-height: 84px;
+    .topbar-in {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 28px;
+      gap: 20px;
+      min-height: 72px;
     }
 
     .brand {
       display: inline-flex;
       align-items: center;
-      gap: 14px;
+      gap: 12px;
       text-decoration: none;
-      min-width: max-content;
     }
 
-    .brand-logo {
-      width: 72px;
-      height: 72px;
-      object-fit: contain;
-      filter: drop-shadow(0 10px 16px rgba(0, 31, 107, 0.14));
-    }
+    .brand-mark { width: 32px; height: 36px; }
 
-    .brand-text strong {
+    .brand-word { line-height: 1.15; }
+
+    .brand-word strong {
       display: block;
-      font-family: "Poppins", sans-serif;
-      color: var(--navy);
-      font-size: 1.12rem;
-      line-height: 1.15;
-      letter-spacing: -0.02em;
-    }
-
-    .brand-text span {
-      display: block;
-      color: var(--green);
-      font-size: 0.82rem;
+      font-family: "Petrona", serif;
       font-weight: 700;
-      letter-spacing: 0.07em;
-      text-transform: uppercase;
-      margin-top: 3px;
+      font-size: 1.3rem;
+      letter-spacing: .01em;
+      color: var(--tinta);
     }
 
-    .nav-links {
-      list-style: none;
+    .brand-word small {
+      display: block;
+      font-size: .72rem;
+      font-weight: 700;
+      color: var(--abu);
+      letter-spacing: .02em;
+    }
+
+    .menu {
       display: flex;
       align-items: center;
-      gap: 8px;
+      gap: 4px;
     }
 
-    .nav-links a {
+    .menu a {
       text-decoration: none;
-      color: var(--ink);
       font-weight: 700;
-      font-size: 0.94rem;
-      padding: 10px 14px;
-      border-radius: 999px;
-      transition: background var(--ease), color var(--ease), transform var(--ease);
-    }
-
-    .nav-links a:hover,
-    .nav-links a:focus-visible {
-      background: var(--green-soft);
-      color: var(--green-dark);
-      transform: translateY(-1px);
-      outline: none;
-    }
-
-    .nav-cta {
-      background: var(--green) !important;
-      color: white !important;
-      box-shadow: 0 10px 24px rgba(34, 156, 74, 0.2);
-    }
-
-    .nav-cta:hover,
-    .nav-cta:focus-visible {
-      background: var(--green-dark) !important;
-    }
-
-    .hero {
+      font-size: .93rem;
+      color: var(--tinta);
+      padding: 8px 12px;
       position: relative;
-      min-height: 690px;
-      display: grid;
-      place-items: center;
-      isolation: isolate;
-      overflow: hidden;
-      color: white;
-      background:
-        linear-gradient(135deg, rgba(0, 31, 107, 0.9), rgba(0, 31, 107, 0.62) 45%, rgba(34, 156, 74, 0.76)),
-        url("peresmian.jpg") center/cover no-repeat;
     }
 
-    .hero::before {
+    .menu a:not(.btn)::after {
       content: "";
       position: absolute;
-      inset: 0;
-      background:
-        radial-gradient(circle at 22% 25%, rgba(247, 201, 72, 0.2), transparent 26rem),
-        radial-gradient(circle at 80% 18%, rgba(255, 255, 255, 0.12), transparent 19rem);
-      z-index: -1;
+      left: 12px;
+      right: 12px;
+      bottom: 4px;
+      height: 2px;
+      background: var(--hijau);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 180ms ease;
+    }
+
+    .menu a:not(.btn):hover::after,
+    .menu a[aria-current="true"]::after { transform: scaleX(1); }
+
+    .menu-cta { margin-left: 10px; }
+
+    .menu-btn {
+      display: none;
+      border: 1px solid var(--garis);
+      background: var(--putih);
+      font: inherit;
+      font-weight: 700;
+      padding: 9px 14px;
+      cursor: pointer;
+    }
+
+    /* ---------- tombol ---------- */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      padding: 12px 20px;
+      min-height: 48px;
+      border: 1.5px solid transparent;
+      border-radius: 3px;
+      font-weight: 800;
+      font-size: .95rem;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background 160ms ease, color 160ms ease, border-color 160ms ease;
+    }
+
+    .btn svg { width: 15px; height: 15px; transition: transform 160ms ease; }
+    .btn:hover svg { transform: translateX(4px); }
+
+    .btn-hijau {
+      background: var(--hijau);
+      color: var(--putih);
+    }
+    .btn-hijau:hover { background: var(--hijau-taut); }
+
+    .btn-garis {
+      border-color: currentColor;
+      color: inherit;
+      background: transparent;
+    }
+    .btn-garis:hover { background: rgba(255, 255, 255, .1); }
+
+    .btn-putih {
+      background: var(--putih);
+      color: var(--hijau-tua);
+    }
+    .btn-putih:hover { background: #e8efe6; }
+
+    /* ---------- hero ---------- */
+    .hero {
+      position: relative;
+      background: var(--hijau-tua);
+      color: var(--putih);
+      overflow: hidden;
     }
 
     .hero::after {
       content: "";
       position: absolute;
-      left: 0;
-      right: 0;
-      bottom: -1px;
-      height: 110px;
-      background: linear-gradient(to bottom, transparent, var(--bg));
-      z-index: -1;
+      inset: 0;
+      background: linear-gradient(115deg, transparent 55%, rgba(9, 42, 26, .55));
+      pointer-events: none;
     }
 
-    .hero-inner {
-      width: min(92%, var(--container));
+    .hero-in {
+      position: relative;
+      z-index: 1;
       display: grid;
-      grid-template-columns: minmax(0, 1.15fr) minmax(290px, 0.85fr);
+      grid-template-columns: minmax(0, 1.08fr) minmax(0, .92fr);
+      gap: clamp(28px, 5vw, 64px);
       align-items: center;
-      gap: 48px;
-      padding: 80px 0 120px;
+      padding: clamp(56px, 8vw, 96px) 0 clamp(48px, 7vw, 88px);
     }
 
-    .eyebrow {
-      display: inline-flex;
+    .hero-meta {
+      display: flex;
       align-items: center;
       gap: 10px;
-      width: fit-content;
-      padding: 8px 14px;
-      border: 1px solid rgba(255, 255, 255, 0.22);
-      border-radius: 999px;
-      background: rgba(255, 255, 255, 0.12);
-      backdrop-filter: blur(10px);
-      font-size: 0.9rem;
-      font-weight: 800;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
+      font-weight: 700;
+      font-size: .9rem;
+      color: #cfe4d3;
       margin-bottom: 22px;
     }
 
-    .eyebrow::before {
+    .hero-meta::before {
       content: "";
-      width: 9px;
-      height: 9px;
-      border-radius: 50%;
-      background: var(--gold);
-      box-shadow: 0 0 0 6px rgba(247, 201, 72, 0.16);
+      width: 26px;
+      height: 2px;
+      background: var(--emas);
     }
 
     .hero h1 {
-      font-family: "Poppins", sans-serif;
-      font-size: clamp(2.55rem, 6vw, 5.7rem);
-      line-height: 1.02;
-      letter-spacing: -0.065em;
-      max-width: 840px;
-      margin-bottom: 24px;
+      font-family: "Petrona", serif;
+      font-weight: 600;
+      font-size: clamp(2.5rem, 5.6vw, 4.3rem);
+      line-height: 1.06;
+      letter-spacing: -.02em;
+      max-width: 15ch;
+      margin-bottom: 20px;
     }
 
-    .hero h1 span {
-      color: #bff0cc;
-    }
-
-    .hero-copy {
-      max-width: 720px;
-      color: rgba(255, 255, 255, 0.88);
-      font-size: clamp(1rem, 2vw, 1.24rem);
-      margin-bottom: 32px;
+    .hero-lead {
+      max-width: 52ch;
+      color: rgba(255, 255, 255, .85);
+      font-size: clamp(1rem, 1.6vw, 1.13rem);
+      margin-bottom: 30px;
     }
 
     .hero-actions {
       display: flex;
       flex-wrap: wrap;
-      gap: 14px;
-      align-items: center;
-    }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 9px;
-      border-radius: 999px;
-      padding: 14px 22px;
-      min-height: 52px;
-      font-weight: 800;
-      text-decoration: none;
-      transition: transform var(--ease), box-shadow var(--ease), background var(--ease), border-color var(--ease);
-    }
-
-    .btn-primary {
-      background: var(--green);
-      color: white;
-      box-shadow: var(--shadow-green);
-    }
-
-    .btn-primary:hover,
-    .btn-primary:focus-visible {
-      background: var(--green-dark);
-      transform: translateY(-2px);
-      outline: none;
-    }
-
-    .btn-ghost {
-      color: white;
-      border: 1px solid rgba(255, 255, 255, 0.28);
-      background: rgba(255, 255, 255, 0.09);
-    }
-
-    .btn-ghost:hover,
-    .btn-ghost:focus-visible {
-      background: rgba(255, 255, 255, 0.16);
-      transform: translateY(-2px);
-      outline: none;
-    }
-
-    .hero-panel {
-      background: rgba(255, 255, 255, 0.13);
-      border: 1px solid rgba(255, 255, 255, 0.22);
-      border-radius: var(--radius-xl);
-      padding: 26px;
-      backdrop-filter: blur(18px);
-      box-shadow: 0 24px 80px rgba(0, 0, 0, 0.2);
-    }
-
-    .hero-panel h2 {
-      font-family: "Poppins", sans-serif;
-      font-size: 1.42rem;
-      line-height: 1.3;
-      margin-bottom: 12px;
-    }
-
-    .hero-panel p {
-      color: rgba(255, 255, 255, 0.82);
-      font-size: 0.98rem;
-      margin-bottom: 20px;
-    }
-
-    .impact-list {
-      display: grid;
       gap: 12px;
-      list-style: none;
     }
 
-    .impact-list li {
-      display: flex;
-      gap: 12px;
-      align-items: flex-start;
-      padding: 14px;
-      border-radius: 18px;
-      background: rgba(255, 255, 255, 0.12);
-    }
-
-    .impact-list b {
-      display: block;
-      line-height: 1.3;
-    }
-
-    .impact-list small {
-      display: block;
-      color: rgba(255, 255, 255, 0.76);
-      line-height: 1.55;
-      margin-top: 2px;
-    }
-
-    .section {
-      width: min(92%, var(--container));
-      margin: 0 auto 72px;
-    }
-
-    .section-card {
-      background: rgba(255, 255, 255, 0.88);
-      border: 1px solid rgba(0, 31, 107, 0.08);
-      border-radius: var(--radius-xl);
-      box-shadow: var(--shadow-sm);
-      padding: clamp(28px, 5vw, 58px);
-    }
-
-    .section-head {
-      display: grid;
-      grid-template-columns: minmax(0, 0.85fr) minmax(260px, 0.55fr);
-      gap: 28px;
-      align-items: end;
-      margin-bottom: 34px;
-    }
-
-    .kicker {
-      color: var(--green);
-      font-weight: 900;
-      text-transform: uppercase;
-      letter-spacing: 0.11em;
-      font-size: 0.82rem;
-      margin-bottom: 10px;
-    }
-
-    .section h2 {
-      font-family: "Poppins", sans-serif;
-      color: var(--navy);
-      font-size: clamp(2rem, 4vw, 3.1rem);
-      line-height: 1.12;
-      letter-spacing: -0.045em;
-    }
-
-    .lead {
-      color: var(--muted);
-      font-size: 1.05rem;
-    }
-
-    .highlight {
-      color: var(--green-dark);
-      font-weight: 900;
-    }
-
-    .about-grid {
-      display: grid;
-      grid-template-columns: minmax(0, 1fr) 340px;
-      gap: 28px;
-      align-items: stretch;
-    }
-
-    .about-text {
-      display: grid;
-      gap: 18px;
-      color: var(--muted);
-      font-size: 1.04rem;
-    }
-
-    .fact-box {
-      border-radius: var(--radius-lg);
-      padding: 26px;
-      background: linear-gradient(135deg, var(--navy), var(--navy-2));
-      color: white;
+    .hero-photo {
       position: relative;
-      overflow: hidden;
-      min-height: 100%;
+      max-width: 460px;
+      justify-self: end;
     }
 
-    .fact-box::after {
+    .hero-photo::before {
       content: "";
       position: absolute;
-      right: -55px;
-      top: -55px;
-      width: 170px;
-      height: 170px;
-      border-radius: 999px;
-      background: rgba(34, 156, 74, 0.32);
+      inset: 0;
+      transform: translate(16px, 16px);
+      background: var(--cobalt);
     }
 
-    .fact-box h3 {
-      font-family: "Poppins", sans-serif;
-      font-size: 1.25rem;
-      margin-bottom: 18px;
+    .hero-photo img {
       position: relative;
-      z-index: 1;
+      width: 100%;
+      border: 1px solid rgba(255, 255, 255, .25);
     }
 
-    .fact-row {
+    .hero-photo figcaption {
       position: relative;
-      z-index: 1;
-      padding: 14px 0;
-      border-top: 1px solid rgba(255, 255, 255, 0.16);
+      margin-top: 34px;
+      font-size: .85rem;
+      color: #cfe4d3;
     }
 
-    .fact-row span {
-      display: block;
-      color: rgba(255, 255, 255, 0.72);
-      font-size: 0.82rem;
-      margin-bottom: 2px;
+    /* watermark dua chevron, dari logo KAMZA */
+    .hero-mark {
+      position: absolute;
+      right: -70px;
+      bottom: -90px;
+      width: 420px;
+      height: 420px;
+      opacity: .13;
+      pointer-events: none;
+      z-index: 0;
     }
 
-    .fact-row b {
-      font-size: 0.98rem;
+    .hero-mark::before,
+    .hero-mark::after {
+      content: "";
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      border-left: 46px solid var(--hijau);
+      border-top: 46px solid var(--hijau);
+      transform: rotate(45deg);
     }
 
-    .stats {
+    .hero-mark::before { left: 0; top: 110px; border-color: var(--cobalt); }
+    .hero-mark::after  { left: 128px; top: 0; }
+
+    /* animasi satu kali saat halaman dibuka */
+    .js .hero-copy > *,
+    .js .hero-photo {
+      animation: naik 640ms cubic-bezier(.2, .7, .3, 1) both;
+    }
+    .js .hero-photo { animation-delay: 160ms; }
+    .js .hero-copy > *:nth-child(2) { animation-delay: 70ms; }
+    .js .hero-copy > *:nth-child(3) { animation-delay: 140ms; }
+    .js .hero-copy > *:nth-child(4) { animation-delay: 210ms; }
+
+    @keyframes naik {
+      from { opacity: 0; transform: translateY(18px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* reveal saat scroll */
+    .js [data-reveal] {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 560ms ease, transform 560ms cubic-bezier(.2, .7, .3, 1);
+    }
+    .js [data-reveal].terlihat {
+      opacity: 1;
+      transform: none;
+    }
+
+    /* ---------- strip angka ---------- */
+    .strip { border-bottom: 1px solid var(--garis); background: var(--kertas); }
+
+    .strip-in {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      gap: 16px;
-      margin-top: 28px;
     }
 
     .stat {
-      border-radius: var(--radius-lg);
-      padding: 24px 18px;
-      background: var(--paper);
-      border: 1px solid var(--line);
-      box-shadow: 0 8px 22px rgba(20, 33, 61, 0.04);
+      padding: 26px 20px 26px 0;
+      border-left: 1px solid var(--garis);
+      padding-left: 20px;
+    }
+    .stat:first-child { border-left: 0; padding-left: 0; }
+
+    .stat b {
+      display: block;
+      font-family: "Petrona", serif;
+      font-weight: 600;
+      font-size: clamp(1.9rem, 3.4vw, 2.6rem);
+      line-height: 1.1;
+      color: var(--hijau-taut);
+      letter-spacing: -.01em;
     }
 
-    .stat strong {
-      display: block;
-      font-family: "Poppins", sans-serif;
-      font-size: clamp(1.8rem, 3vw, 2.45rem);
-      line-height: 1;
-      color: var(--green);
-      letter-spacing: -0.04em;
+    .stat span { font-size: .88rem; color: var(--abu); font-weight: 600; }
+
+    /* ---------- kepala seksi ---------- */
+    .sec { padding: clamp(56px, 8vw, 96px) 0; }
+
+    .sec + .sec { border-top: 1px solid var(--garis); }
+
+    .sec-label {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 800;
+      font-size: .9rem;
+      color: var(--hijau-taut);
+      margin-bottom: 14px;
+    }
+
+    .sec-label svg { width: 13px; height: 13px; }
+
+    .sec-head {
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr);
+      gap: clamp(20px, 4vw, 56px);
+      align-items: end;
+      margin-bottom: clamp(30px, 5vw, 52px);
+    }
+
+    .sec-head h2,
+    .cta h2 {
+      font-family: "Petrona", serif;
+      font-weight: 600;
+      font-size: clamp(1.85rem, 3.8vw, 2.9rem);
+      line-height: 1.12;
+      letter-spacing: -.02em;
+      max-width: 22ch;
+    }
+
+    .sec-note { color: var(--abu); font-size: 1.02rem; }
+
+    /* ---------- profil ---------- */
+    .profil-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr);
+      gap: clamp(28px, 5vw, 64px);
+      align-items: start;
+    }
+
+    .profil-teks { display: grid; gap: 18px; color: var(--abu); font-size: 1.04rem; }
+
+    .profil-teks strong { color: var(--tinta); font-weight: 700; }
+
+    .fakta { border-top: 2px solid var(--tinta); }
+
+    .fakta div {
+      display: grid;
+      grid-template-columns: 130px 1fr;
+      gap: 14px;
+      padding: 13px 0;
+      border-bottom: 1px solid var(--garis);
+      font-size: .93rem;
+    }
+
+    .fakta dt {
+      font-weight: 700;
+      color: var(--abu);
+    }
+
+    .fakta dd { font-weight: 600; color: var(--tinta); }
+
+    /* ---------- program ---------- */
+    .pilar-list {
+      list-style: none;
+      display: grid;
+      gap: 0;
+    }
+
+    .pilar {
+      display: grid;
+      grid-template-columns: 56px minmax(0, 1fr);
+      gap: 20px;
+      padding: 30px 0;
+      border-top: 1px solid var(--garis);
+    }
+
+    .pilar:last-child { border-bottom: 1px solid var(--garis); }
+
+    .pilar-icon {
+      width: 56px;
+      height: 56px;
+      display: grid;
+      place-items: center;
+      border: 1.5px solid var(--tinta);
+      border-radius: 3px;
+    }
+
+    .pilar-icon svg { width: 26px; height: 26px; }
+
+    .pilar h3 {
+      font-family: "Petrona", serif;
+      font-weight: 600;
+      font-size: 1.45rem;
+      letter-spacing: -.01em;
       margin-bottom: 8px;
     }
 
-    .stat span {
-      color: var(--muted);
-      font-weight: 700;
-      font-size: 0.92rem;
-    }
+    .pilar p { color: var(--abu); max-width: 68ch; }
 
-    .partners {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 22px;
-    }
-
-    .partner-card {
-      min-height: 200px;
-      padding: 32px 24px;
-      border-radius: var(--radius-lg);
-      background: linear-gradient(135deg, var(--paper) 0%, rgba(34, 156, 74, 0.04) 100%);
-      border: 1.5px solid rgba(34, 156, 74, 0.16);
-      display: grid;
-      place-items: center;
-      text-align: center;
-      transition: transform var(--ease), box-shadow var(--ease), border-color var(--ease), background var(--ease);
-      position: relative;
-      overflow: hidden;
-    }
-
-    .partner-card::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(135deg, rgba(34, 156, 74, 0.08) 0%, transparent 100%);
-      opacity: 0;
-      transition: opacity var(--ease);
-      pointer-events: none;
-    }
-
-    .partner-card:hover,
-    .partner-card:focus-within {
-      transform: translateY(-10px);
-      box-shadow: 0 24px 50px rgba(34, 156, 74, 0.22);
-      border-color: rgba(34, 156, 74, 0.48);
-      background: linear-gradient(135deg, #ffffff 0%, rgba(34, 156, 74, 0.08) 100%);
-    }
-
-    .partner-card:hover::before {
-      opacity: 1;
-    }
-
-    .partner-card img {
-      width: 110px;
-      height: 80px;
-      object-fit: contain;
-      margin-bottom: 18px;
-      filter: saturate(1.1) drop-shadow(0 6px 18px rgba(34, 156, 74, 0.12));
-      transition: transform var(--ease), filter var(--ease);
-      position: relative;
-      z-index: 1;
-    }
-
-    .partner-card:hover img {
-      transform: scale(1.12);
-      filter: saturate(1.25) drop-shadow(0 10px 28px rgba(34, 156, 74, 0.2));
-    }
-
-    .partner-card span {
-      color: var(--navy);
-      font-size: 0.9rem;
+    .pilar-tag {
+      display: inline-block;
+      margin-top: 12px;
+      font-size: .8rem;
       font-weight: 800;
-      line-height: 1.4;
-      position: relative;
-      z-index: 1;
-      letter-spacing: 0.02em;
+      color: var(--hijau-taut);
+      border: 1px solid var(--garis);
+      background: var(--putih);
+      padding: 4px 10px;
+      border-radius: 3px;
     }
 
-    .program-grid {
+    /* ---------- sinergi ---------- */
+    .sinergi-wall {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 22px;
+      grid-template-columns: repeat(4, 1fr);
+      border: 1px solid var(--garis);
+      background: var(--putih);
     }
 
-    .program-card {
-      position: relative;
-      overflow: hidden;
-      min-height: 330px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      border-radius: var(--radius-xl);
-      padding: 30px;
-      background: var(--paper);
-      border: 1px solid var(--line);
-      box-shadow: 0 10px 30px rgba(20, 33, 61, 0.05);
-      transition: transform var(--ease), box-shadow var(--ease), border-color var(--ease);
-    }
-
-    .program-card::before {
-      content: "";
-      position: absolute;
-      inset: auto -38px -72px auto;
-      width: 190px;
-      height: 190px;
-      border-radius: 50%;
-      background: var(--green-soft);
-      z-index: 0;
-      transition: transform var(--ease), background var(--ease);
-    }
-
-    .program-card:hover {
-      transform: translateY(-8px);
-      box-shadow: var(--shadow-md);
-      border-color: rgba(34, 156, 74, 0.28);
-    }
-
-    .program-card:hover::before {
-      transform: scale(1.15);
-      background: rgba(34, 156, 74, 0.16);
-    }
-
-    .program-icon {
-      width: 58px;
-      height: 58px;
+    .sinergi-cell {
       display: grid;
       place-items: center;
-      border-radius: 18px;
-      background: var(--green-soft);
-      color: var(--green-dark);
-      font-size: 1.7rem;
-      margin-bottom: 22px;
-      position: relative;
-      z-index: 1;
+      align-content: center;
+      gap: 14px;
+      padding: 26px 18px;
+      border-right: 1px solid var(--garis);
+      border-bottom: 1px solid var(--garis);
+      min-height: 150px;
+      text-align: center;
     }
 
-    .program-card h3 {
-      font-family: "Poppins", sans-serif;
-      color: var(--navy);
-      font-size: 1.28rem;
-      line-height: 1.32;
-      margin-bottom: 12px;
-      position: relative;
-      z-index: 1;
+    .sinergi-cell:nth-child(4n) { border-right: 0; }
+    .sinergi-cell:nth-child(n+5) { border-bottom: 0; }
+
+    .sinergi-cell img {
+      max-height: 64px;
+      max-width: 150px;
+      object-fit: contain;
     }
 
-    .program-card p {
-      color: var(--muted);
-      position: relative;
-      z-index: 1;
+    .sinergi-cell span {
+      font-size: .84rem;
+      font-weight: 700;
+      color: var(--abu);
     }
 
-    .program-tag {
-      margin-top: 22px;
-      width: fit-content;
-      border-radius: 999px;
-      background: rgba(0, 31, 107, 0.06);
-      color: var(--navy);
-      font-size: 0.82rem;
-      font-weight: 900;
-      padding: 7px 12px;
-      position: relative;
-      z-index: 1;
-    }
-
-    .cta-band {
-      width: min(92%, var(--container));
-      margin: 0 auto 76px;
-      border-radius: 32px;
-      padding: clamp(30px, 5vw, 56px);
-      background:
-        radial-gradient(circle at 12% 20%, rgba(247, 201, 72, 0.2), transparent 20rem),
-        linear-gradient(135deg, var(--navy), #022b7f 58%, var(--green-dark));
-      color: white;
+    .logo-mono {
       display: grid;
-      grid-template-columns: minmax(0, 1fr) auto;
-      gap: 28px;
+      place-items: center;
+      width: 64px;
+      height: 64px;
+      border: 1.5px solid var(--tinta);
+      border-radius: 3px;
+      font-family: "Petrona", serif;
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: var(--tinta);
+    }
+
+    /* ---------- kontribusi ---------- */
+    .langkah-list {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: clamp(20px, 3vw, 40px);
+      counter-reset: langkah;
+    }
+
+    .langkah {
+      counter-increment: langkah;
+      border-top: 2px solid var(--tinta);
+      padding-top: 18px;
+    }
+
+    .langkah::before {
+      content: counter(langkah);
+      display: block;
+      font-family: "Petrona", serif;
+      font-weight: 600;
+      font-size: 2.6rem;
+      line-height: 1;
+      color: var(--cobalt);
+      margin-bottom: 14px;
+    }
+
+    .langkah h3 { font-size: 1.08rem; font-weight: 800; margin-bottom: 8px; }
+
+    .langkah p { color: var(--abu); font-size: .96rem; }
+
+    /* ---------- tanya jawab ---------- */
+    .faq-list { border-top: 1px solid var(--garis); }
+
+    .faq-list details { border-bottom: 1px solid var(--garis); }
+
+    .faq-list summary {
+      display: flex;
       align-items: center;
-      box-shadow: var(--shadow-md);
-      overflow: hidden;
+      justify-content: space-between;
+      gap: 18px;
+      padding: 20px 0;
+      cursor: pointer;
+      font-weight: 800;
+      font-size: 1.05rem;
+      list-style: none;
+    }
+
+    .faq-list summary::-webkit-details-marker { display: none; }
+
+    .faq-plus {
       position: relative;
+      flex: 0 0 auto;
+      width: 30px;
+      height: 30px;
+      border: 1.5px solid var(--tinta);
+      border-radius: 3px;
     }
 
-    .cta-band h2 {
-      font-family: "Poppins", sans-serif;
-      font-size: clamp(1.8rem, 3.5vw, 3rem);
-      line-height: 1.14;
-      letter-spacing: -0.045em;
-      margin-bottom: 12px;
-    }
-
-    .cta-band p {
-      color: rgba(255, 255, 255, 0.82);
-      max-width: 780px;
-    }
-
-    .site-footer {
-      background: #06184a;
-      color: white;
-      padding: 62px 0 30px;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .site-footer::before {
+    .faq-plus::before,
+    .faq-plus::after {
       content: "";
       position: absolute;
-      inset: 0;
-      background:
-        radial-gradient(circle at 20% 10%, rgba(34, 156, 74, 0.18), transparent 25rem),
-        radial-gradient(circle at 90% 50%, rgba(247, 201, 72, 0.12), transparent 22rem);
-      pointer-events: none;
+      background: var(--tinta);
+      top: 50%;
+      left: 50%;
     }
 
-    .footer-inner {
-      width: min(92%, var(--container));
-      margin: 0 auto;
-      position: relative;
-      z-index: 1;
+    .faq-plus::before { width: 12px; height: 2px; transform: translate(-50%, -50%); }
+    .faq-plus::after  { width: 2px; height: 12px; transform: translate(-50%, -50%); transition: transform 180ms ease; }
+
+    details[open] .faq-plus::after { transform: translate(-50%, -50%) rotate(90deg); }
+
+    .faq-list details p {
+      padding: 0 40px 22px 0;
+      color: var(--abu);
+      max-width: 72ch;
+    }
+
+    /* ---------- cta ---------- */
+    .cta {
+      background: var(--hijau-tua);
+      color: var(--putih);
+    }
+
+    .cta-in {
       display: grid;
       grid-template-columns: minmax(0, 1fr) auto;
-      gap: 36px;
-      align-items: start;
+      gap: clamp(24px, 4vw, 48px);
+      align-items: center;
+      padding: clamp(52px, 7vw, 84px) 0;
+    }
+
+    .cta p { color: rgba(255, 255, 255, .82); max-width: 56ch; margin-top: 14px; }
+
+    .cta-actions { display: grid; gap: 12px; }
+
+    /* ---------- footer ---------- */
+    .footer {
+      background: var(--hijau-malam);
+      color: rgba(255, 255, 255, .78);
+      padding: 52px 0 0;
+    }
+
+    .footer-in {
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) auto;
+      gap: clamp(28px, 5vw, 72px);
+      padding-bottom: 44px;
     }
 
     .footer-brand {
       display: flex;
-      gap: 16px;
       align-items: center;
-      margin-bottom: 18px;
+      gap: 14px;
+      margin-bottom: 16px;
     }
 
-    .footer-brand img {
-      width: 74px;
-      height: 74px;
-      object-fit: contain;
-      background: white;
-      border-radius: 18px;
-      padding: 8px;
+    .footer-brand img { width: 42px; height: 48px; }
+
+    .footer-brand strong {
+      font-family: "Petrona", serif;
+      font-size: 1.4rem;
+      color: var(--putih);
+      display: block;
+      line-height: 1.1;
     }
 
-    .footer-brand h2 {
-      font-family: "Poppins", sans-serif;
-      line-height: 1.2;
-      font-size: 1.5rem;
-    }
+    .footer-brand small { font-size: .8rem; font-weight: 700; color: #9dc4a6; }
 
-    .footer-brand span {
-      color: #bff0cc;
-      font-weight: 800;
-      font-size: 0.92rem;
-    }
+    .footer p { max-width: 54ch; font-size: .95rem; }
 
-    .footer-inner p {
-      color: rgba(255, 255, 255, 0.76);
-      max-width: 680px;
-    }
+    .footer-nav { display: grid; gap: 10px; align-content: start; }
 
-    .footer-links {
-      display: grid;
-      gap: 12px;
-      min-width: 220px;
-    }
-
-    .footer-links a {
-      display: flex;
+    .footer-nav a {
+      display: inline-flex;
       align-items: center;
-      justify-content: center;
-      gap: 8px;
-      min-height: 48px;
-      padding: 10px 18px;
-      border-radius: 999px;
-      background: rgba(255, 255, 255, 0.09);
-      border: 1px solid rgba(255, 255, 255, 0.14);
-      color: white;
+      gap: 10px;
       text-decoration: none;
-      font-weight: 800;
-      transition: background var(--ease), transform var(--ease);
+      font-weight: 700;
+      font-size: .93rem;
+      color: var(--putih);
     }
 
-    .footer-links a:hover,
-    .footer-links a:focus-visible {
-      background: var(--green);
-      transform: translateY(-2px);
-      outline: none;
+    .footer-nav a svg { width: 16px; height: 16px; }
+
+    .footer-nav a:hover { text-decoration: underline; text-underline-offset: 4px; }
+
+    .footer-bawah {
+      border-top: 1px solid rgba(255, 255, 255, .14);
+      padding: 20px 0 26px;
+      font-size: .85rem;
+      color: rgba(255, 255, 255, .55);
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
     }
 
-    .copyright {
-      width: min(92%, var(--container));
-      margin: 38px auto 0;
-      padding-top: 24px;
-      border-top: 1px solid rgba(255, 255, 255, 0.12);
-      color: rgba(255, 255, 255, 0.6);
-      position: relative;
-      z-index: 1;
-      font-size: 0.92rem;
+    /* ---------- responsif ---------- */
+    @media (max-width: 960px) {
+      .hero-in { grid-template-columns: 1fr; }
+      .hero-photo { justify-self: start; max-width: 420px; }
+      .hero-photo::before { transform: translate(10px, 10px); }
+      .hero-photo figcaption { margin-top: 26px; }
+      .hero-mark { width: 280px; height: 280px; right: -50px; bottom: -60px; }
+      .hero-mark::before, .hero-mark::after { width: 130px; height: 130px; border-width: 30px; }
+      .hero-mark::after { left: 82px; }
+      .strip-in { grid-template-columns: repeat(2, 1fr); }
+      .stat { padding-left: 16px; }
+      .stat:nth-child(3) { border-left: 0; padding-left: 0; }
+      .stat:nth-child(-n+2) { border-bottom: 1px solid var(--garis); }
+      .sec-head, .profil-grid, .cta-in, .footer-in { grid-template-columns: 1fr; }
+      .sinergi-wall { grid-template-columns: repeat(2, 1fr); }
+      .sinergi-cell:nth-child(4n) { border-right: 1px solid var(--garis); }
+      .sinergi-cell:nth-child(2n) { border-right: 0; }
+      .sinergi-cell:nth-child(n+5) { border-bottom: 1px solid var(--garis); }
+      .sinergi-cell:nth-child(n+7) { border-bottom: 0; }
+      .langkah-list { grid-template-columns: 1fr; }
     }
 
-    .reveal {
-      animation: fadeUp 700ms ease both;
-    }
-
-    .reveal:nth-child(2) { animation-delay: 80ms; }
-    .reveal:nth-child(3) { animation-delay: 160ms; }
-
-    @keyframes fadeUp {
-      from {
-        opacity: 0;
-        transform: translateY(22px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    @media (max-width: 980px) {
-      .hero-inner,
-      .section-head,
-      .about-grid,
-      .cta-band,
-      .footer-inner {
-        grid-template-columns: 1fr;
-      }
-
-      .hero {
-        min-height: auto;
-      }
-
-      .hero-inner {
-        padding: 72px 0 96px;
-      }
-
-      .stats {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .partners {
-        grid-template-columns: repeat(3, 1fr);
-      }
-
-      .program-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .program-card {
-        min-height: 270px;
-      }
-    }
-
-    @media (max-width: 760px) {
-      .nav-wrap {
-        min-height: auto;
-        padding: 12px 0;
-        align-items: flex-start;
-      }
-
-      .brand-logo {
-        width: 58px;
-        height: 58px;
-      }
-
-      .brand-text strong {
-        font-size: 0.98rem;
-      }
-
-      .brand-text span {
-        font-size: 0.72rem;
-      }
-
-      .nav-links {
-        margin-left: auto;
-        display: grid;
-        grid-template-columns: repeat(2, max-content);
-        gap: 6px;
-        justify-content: end;
-      }
-
-      .nav-links a {
-        padding: 8px 10px;
-        font-size: 0.82rem;
-      }
-
-      .hero-copy,
-      .lead,
-      .about-text {
-        font-size: 1rem;
-      }
-
-      .hero-panel,
-      .section-card,
-      .program-card,
-      .cta-band {
-        border-radius: 22px;
-      }
-
-      .partners {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 18px;
-      }
-
-      .partner-card {
-        min-height: 180px;
-        padding: 26px 20px;
-      }
-
-      .partner-card img {
-        width: 100px;
-        height: 72px;
-      }
-    }
-
-    @media (max-width: 520px) {
-      .nav-wrap {
-        width: 94%;
-        gap: 12px;
-      }
-
-      .brand-text {
+    @media (max-width: 860px) {
+      .menu-btn { display: inline-block; }
+      .menu {
         display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--kertas);
+        border-bottom: 1px solid var(--garis);
+        flex-direction: column;
+        align-items: stretch;
+        padding: 10px 4%;
+        gap: 2px;
+        box-shadow: 0 18px 40px rgba(19, 32, 24, .12);
       }
+      .menu.open { display: flex; }
+      .menu a { padding: 13px 6px; border-bottom: 1px solid var(--garis); }
+      .menu a:last-child { border-bottom: 0; }
+      .menu a:not(.btn)::after { display: none; }
+      .menu-cta { margin: 10px 0 4px; justify-content: center; }
+    }
 
-      .nav-links {
-        grid-template-columns: repeat(2, 1fr);
-        width: 100%;
-      }
-
-      .nav-links a {
-        text-align: center;
-      }
-
-      .hero-inner {
-        width: 90%;
-        padding: 54px 0 82px;
-      }
-
-      .hero-actions .btn {
-        width: 100%;
-      }
-
-      .stats,
-      .partners {
-        grid-template-columns: 1fr;
-      }
-
-      .partner-card {
-        min-height: 160px;
-        padding: 24px 18px;
-      }
-
-      .partner-card img {
-        width: 90px;
-        height: 64px;
-        margin-bottom: 12px;
-      }
-
-      .footer-links {
-        width: 100%;
-      }
+    @media (max-width: 560px) {
+      .brand-word small { display: none; }
+      .hero-actions .btn { width: 100%; justify-content: center; }
+      .strip-in { grid-template-columns: 1fr; }
+      .stat { border-left: 0; padding-left: 0; border-bottom: 1px solid var(--garis); padding-block: 18px; }
+      .stat:last-child { border-bottom: 0; }
+      .cta-actions .btn { width: 100%; justify-content: center; }
     }
 
     @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
       *, *::before, *::after {
-        animation-duration: 0.01ms !important;
+        animation-duration: .01ms !important;
         animation-iteration-count: 1 !important;
-        scroll-behavior: auto !important;
-        transition-duration: 0.01ms !important;
+        transition-duration: .01ms !important;
       }
+      .js [data-reveal] { opacity: 1; transform: none; }
     }
   </style>
 </head>
 <body>
-  <header class="site-header" aria-label="Navigasi utama">
-    <div class="nav-wrap">
-      <a href="#beranda" class="brand" aria-label="Beranda KAMZA">
-        <img src="logo-kampung-zakat.png" alt="Logo KAMZA" class="brand-logo" />
-        <span class="brand-text">
+  <a class="skip" href="#konten">Langsung ke konten</a>
+
+  <header class="topbar">
+    <div class="wrap topbar-in">
+      <a class="brand" href="#atas" aria-label="KAMZA — kembali ke atas">
+        <img class="brand-mark" src="assets/kamza-mark.png" width="32" height="36" alt="Logo KAMZA" />
+        <span class="brand-word">
           <strong>KAMZA</strong>
-          <span>Kampung Zakat Terpadu</span>
+          <small>Kampung Zakat Terpadu</small>
         </span>
       </a>
 
-      <nav>
-        <ul class="nav-links">
-          <li><a href="#profil">Profil</a></li>
-          <li><a href="#sinergi">Sinergi</a></li>
-          <li><a href="#program">Program</a></li>
-          <li><a class="nav-cta" href="https://api.whatsapp.com/send?phone=6281336661466" target="_blank" rel="noopener">Hubungi</a></li>
-        </ul>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+
+      <nav class="menu" id="menu" aria-label="Navigasi utama">
+        <a href="#profil">Profil</a>
+        <a href="#program">Program</a>
+        <a href="#sinergi">Sinergi</a>
+        <a href="#kontribusi">Kontribusi</a>
+        <a href="#tanya">Tanya Jawab</a>
+        <a class="btn btn-hijau menu-cta" href="https://api.whatsapp.com/send?phone=6281336661466" target="_blank" rel="noopener">Hubungi kami
+          <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
       </nav>
     </div>
   </header>
 
-  <main id="beranda">
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="hero-inner">
-        <div class="hero-content reveal">
-          <p class="eyebrow">Binaan Kemenag Kab. Jember</p>
-          <h1 id="hero-title">Kampung Zakat Terpadu <span>Dusun Paceh</span></h1>
-          <p class="hero-copy">
-            Membangun kemandirian umat melalui zakat, infak, dan sedekah yang tepat sasaran, produktif, kolaboratif, dan berkelanjutan.
+  <main id="konten">
+    <section class="hero" id="atas" aria-labelledby="hero-judul">
+      <div class="wrap hero-in">
+        <div class="hero-copy">
+          <p class="hero-meta">Binaan Kementerian Agama Kab. Jember, sejak 2018</p>
+          <h1 id="hero-judul">Zakat yang kembali ke kampung.</h1>
+          <p class="hero-lead">
+            KAMZA mengelola zakat, infak, dan sedekah warga Dusun Paceh menjadi pendidikan,
+            usaha keluarga, dan layanan sosial yang tepat sasaran — dikelola bersama,
+            dinikmati bersama.
           </p>
-          <div class="hero-actions" aria-label="Tautan utama">
-            <a class="btn btn-primary" href="#program">Lihat Program</a>
-            <a class="btn btn-ghost" href="https://maps.app.goo.gl/zhAtB4PnGNdUTpLe9" target="_blank" rel="noopener">📍 Buka Lokasi</a>
+          <div class="hero-actions">
+            <a class="btn btn-hijau" href="#kontribusi">Mulai berkontribusi
+              <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a class="btn btn-garis" href="#program">Lihat program</a>
           </div>
         </div>
 
-        <aside class="hero-panel reveal" aria-label="Ringkasan dampak KAMZA">
-          <h2>Zakat yang dikelola untuk dampak nyata.</h2>
-          <p>Fokus pada penguatan pendidikan, ekonomi keluarga, kesehatan, dan kepedulian sosial masyarakat.</p>
-          <ul class="impact-list">
-            <li>
-              <span aria-hidden="true">📚</span>
-              <div><b>Pendidikan Qurani</b><small>TPA, Rumah Baca Qur’an, beasiswa, dan dukungan guru ngaji.</small></div>
-            </li>
-            <li>
-              <span aria-hidden="true">💼</span>
-              <div><b>Ekonomi Produktif</b><small>Pelatihan, modal usaha, serta bantuan ternak untuk keluarga binaan.</small></div>
-            </li>
-            <li>
-              <span aria-hidden="true">🤝</span>
-              <div><b>Kolaborasi LAZ & UPZ</b><small>Sinergi lembaga zakat untuk program yang lebih luas dan berkelanjutan.</small></div>
-            </li>
-          </ul>
-        </aside>
+        <figure class="hero-photo">
+          <img src="assets/peresmian-crop.jpg" width="960" height="960" fetchpriority="high"
+               alt="Penyerahan piagam Kampung Zakat Terpadu oleh pejabat Kemenag di Dusun Paceh" />
+          <figcaption>Penyerahan piagam Kampung Zakat Terpadu Dusun Paceh, 31 Maret 2018.</figcaption>
+        </figure>
+      </div>
+      <div class="hero-mark" aria-hidden="true"></div>
+    </section>
+
+    <section class="strip" aria-label="Ringkasan KAMZA">
+      <div class="wrap strip-in">
+        <div class="stat"><b>2018</b><span>Ditetapkan Kankemenag Kab. Jember</span></div>
+        <div class="stat"><b>3</b><span>Pilar program utama</span></div>
+        <div class="stat"><b>8</b><span>Mitra LAZ dan lembaga sosial</span></div>
+        <div class="stat"><b>4</b><span>Bidang manfaat bagi warga</span></div>
       </div>
     </section>
 
-    <section class="section section-card reveal" id="profil" aria-labelledby="profil-title">
-      <div class="section-head">
-        <div>
-          <p class="kicker">Tentang KAMZA</p>
-          <h2 id="profil-title">Gerakan zakat terpadu untuk menguatkan warga Paceh.</h2>
-        </div>
-        <p class="lead">
-          KAMZA menjadi ruang kolaborasi antara pemerintah, lembaga zakat, tokoh masyarakat, dan warga untuk menghadirkan program yang menyentuh kebutuhan dasar sekaligus mendorong kemandirian.
+    <section class="sec" id="profil" aria-labelledby="profil-judul">
+      <div class="wrap" data-reveal>
+        <p class="sec-label">
+          <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M5 3l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Profil
         </p>
-      </div>
-
-      <div class="about-grid">
-        <div class="about-text">
-          <p>
-            <span class="highlight">Kampung Zakat Terpadu (KAMZA)</span> adalah program binaan resmi dari Kantor Kementerian Agama Kabupaten Jember yang didirikan pada tanggal 15 Maret 2018 dan diresmikan langsung oleh Kakanwil Kemenag Provinsi Jawa Timur pada 31 Maret 2018.
-          </p>
-          <p>
-            Di bawah arahan dan pengelolaan Bapak Amiruddin, S.Pd. selaku Sekretaris Direktur/Direktur, KAMZA hadir sebagai solusi untuk meningkatkan kualitas ekonomi, pendidikan, dan kesehatan masyarakat di Dusun Paceh dan sekitarnya melalui pendayagunaan dana zakat, infak, dan sedekah secara produktif.
+        <div class="sec-head">
+          <h2 id="profil-judul">Gerakan zakat terpadu di Dusun Paceh</h2>
+          <p class="sec-note">
+            KAMZA adalah ruang kolaborasi warga, pemerintah, dan lembaga zakat —
+            menghadirkan program yang menyentuh kebutuhan dasar sekaligus mendorong kemandirian.
           </p>
         </div>
 
-        <aside class="fact-box" aria-label="Informasi singkat KAMZA">
-          <h3>Informasi Singkat</h3>
-          <div class="fact-row">
-            <span>Lokasi</span>
-            <b>Dusun Paceh, Desa Jambearum, Sumberjambe, Jember</b>
+        <div class="profil-grid">
+          <div class="profil-teks">
+            <p>
+              <strong>Kampung Zakat Terpadu (KAMZA)</strong> adalah program binaan resmi Kantor
+              Kementerian Agama Kabupaten Jember, ditetapkan pada 15 Maret 2018 dan diresmikan
+              langsung oleh Kakanwil Kemenag Provinsi Jawa Timur pada 31 Maret 2018.
+            </p>
+            <p>
+              Di bawah arahan <strong>Bapak Amiruddin, S.Pd.</strong> selaku Sekretaris
+              Direktur/Direktur, KAMZA menggerakkan dana zakat, infak, dan sedekah secara
+              produktif untuk meningkatkan kualitas ekonomi, pendidikan, dan kesehatan
+              masyarakat Dusun Paceh dan sekitarnya.
+            </p>
+            <p>
+              Bantuan tidak berhenti sebagai santunan. Setiap program dirancang agar keluarga
+              penerima manfaat naik kelas — dari butuh, menjadi mampu, lalu ikut berbagi.
+            </p>
           </div>
-          <div class="fact-row">
-            <span>Ditetapkan</span>
-            <b>15 Maret 2018</b>
-          </div>
-          <div class="fact-row">
-            <span>Diresmikan</span>
-            <b>31 Maret 2018</b>
-          </div>
-          <div class="fact-row">
-            <span>Fokus</span>
-            <b>Pendidikan, Ekonomi, Sosial, dan Kesehatan</b>
-          </div>
-        </aside>
-      </div>
 
-      <div class="stats" aria-label="Ringkasan program">
-        <div class="stat"><strong>4</strong><span>Bidang manfaat utama</span></div>
-        <div class="stat"><strong>6+</strong><span>Mitra zakat dan sosial</span></div>
-        <div class="stat"><strong>2018</strong><span>Tahun mulai gerakan</span></div>
-        <div class="stat"><strong>1</strong><span>Dusun binaan terpadu</span></div>
+          <dl class="fakta">
+            <div><dt>Lokasi</dt><dd>Dusun Paceh, Desa Jambearum, Sumberjambe, Jember</dd></div>
+            <div><dt>Ditetapkan</dt><dd>15 Maret 2018</dd></div>
+            <div><dt>Diresmikan</dt><dd>31 Maret 2018</dd></div>
+            <div><dt>Pengelola</dt><dd>Amiruddin, S.Pd. beserta tokoh masyarakat</dd></div>
+            <div><dt>Fokus</dt><dd>Pendidikan, ekonomi, sosial, dan kesehatan</dd></div>
+          </dl>
+        </div>
       </div>
     </section>
 
-    <section class="section section-card reveal" id="sinergi" aria-labelledby="sinergi-title">
-      <div class="section-head">
-        <div>
-          <p class="kicker">Sinergi & Kolaborasi</p>
-          <h2 id="sinergi-title">Dikuatkan oleh jaringan lembaga zakat dan mitra sosial.</h2>
-        </div>
-        <p class="lead">
-          Keberhasilan KAMZA terbangun melalui gotong royong berbagai Unit Pengumpul Zakat dan Lembaga Amil Zakat yang bergerak bersama untuk kemaslahatan warga.
+    <section class="sec" id="program" aria-labelledby="program-judul">
+      <div class="wrap" data-reveal>
+        <p class="sec-label">
+          <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M5 3l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Program
         </p>
-      </div>
-
-      <div class="partners" aria-label="Daftar lembaga sinergi">
-        <article class="partner-card">
-          <img src="logo-baznas.png" alt="Logo BAZNAS Jember" />
-          <span>BAZNAS Jember</span>
-        </article>
-        <article class="partner-card">
-          <img src="logo.lazis.nurul.falah.png" alt="Logo Lazis Nurul Falah" />
-          <span>Lazis Nurul Falah</span>
-        </article>
-        <article class="partner-card">
-          <img src="logo-lazis-nurul-hayat.png" alt="Logo Lazis Nurul Hayat" />
-          <span>Lazis Nurul Hayat</span>
-        </article>
-        <article class="partner-card">
-          <img src="logo-ym.png" alt="Logo Yatim Mandiri" />
-          <span>Yatim Mandiri</span>
-        </article>
-        <article class="partner-card">
-          <img src="https://via.placeholder.com/220x140/FFFFFF/177637?text=Lazis+Rizqi" alt="Logo Lazis Rizqi" />
-          <span>Lazis Rizqi</span>
-        </article>
-        <article class="partner-card">
-          <img src="logo-ydsf.png" alt="Logo YDSF" />
-          <span>YDSF</span>
-        </article>
-      </div>
-    </section>
-
-    <section class="section reveal" id="program" aria-labelledby="program-title">
-      <div class="section-card">
-        <div class="section-head">
-          <div>
-            <p class="kicker">Program Unggulan</p>
-            <h2 id="program-title">Tiga pilar utama untuk membangun kemandirian umat.</h2>
-          </div>
-          <p class="lead">
-            Setiap program dirancang agar bantuan tidak berhenti sebagai santunan, tetapi menjadi jalan menuju peningkatan kualitas hidup keluarga penerima manfaat.
+        <div class="sec-head">
+          <h2 id="program-judul">Tiga pilar menuju keluarga yang mandiri</h2>
+          <p class="sec-note">
+            Program dijalankan bersama warga dan mitra LAZ agar manfaatnya terasa
+            langsung di rumah-rumah warga.
           </p>
         </div>
 
-        <div class="program-grid">
-          <article class="program-card">
+        <ol class="pilar-list">
+          <li class="pilar">
+            <span class="pilar-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M12 5.5C10 4 7.5 3.5 4.5 3.5v14c3 0 5.5.5 7.5 2 2-1.5 4.5-2 7.5-2v-14c-3 0-5.5.5-7.5 2Zm0 0v14" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+            </span>
             <div>
-              <div class="program-icon" aria-hidden="true">📚</div>
-              <h3>Pendidikan & Keagamaan</h3>
-              <p>Pengentasan buta aksara Al-Qur’an melalui TPA Darul Qur’an Ibrahimy, Rumah Baca Qur’an untuk lansia, beasiswa anak yatim, dan bantuan guru ngaji.</p>
+              <h3>Pendidikan &amp; keagamaan</h3>
+              <p>
+                Pengentasan buta aksara Al-Qur&rsquo;an melalui TPA Darul Qur&rsquo;an Ibrahimy,
+                Rumah Baca Qur&rsquo;an untuk lansia, beasiswa anak yatim, dan bantuan guru ngaji.
+              </p>
+              <span class="pilar-tag">Literasi Qurani</span>
             </div>
-            <span class="program-tag">Literasi Qurani</span>
-          </article>
+          </li>
 
-          <article class="program-card">
+          <li class="pilar">
+            <span class="pilar-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M12 21V9m0 0C12 5 9 3.5 5.5 3.5c0 4 2.5 5.5 6.5 5.5Zm0 0c0-4 3-5.5 6.5-5.5 0 4-2.5 5.5-6.5 5.5Z" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
             <div>
-              <div class="program-icon" aria-hidden="true">💼</div>
-              <h3>Pemberdayaan Ekonomi</h3>
-              <p>Pelatihan kemandirian seperti pembuatan paving dan anyaman bambu, bantuan modal usaha, serta hewan ternak untuk meningkatkan taraf hidup warga.</p>
+              <h3>Pemberdayaan ekonomi</h3>
+              <p>
+                Pelatihan kemandirian seperti pembuatan paving dan anyaman bambu, bantuan
+                modal usaha, serta hewan ternak untuk menaikkan taraf hidup keluarga binaan.
+              </p>
+              <span class="pilar-tag">Ekonomi produktif</span>
             </div>
-            <span class="program-tag">Ekonomi Produktif</span>
-          </article>
+          </li>
 
-          <article class="program-card">
+          <li class="pilar">
+            <span class="pilar-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-4.6-9.3-9A5.4 5.4 0 0 1 12 6.7 5.4 5.4 0 0 1 21.3 12C19 16.4 12 21 12 21Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+            </span>
             <div>
-              <div class="program-icon" aria-hidden="true">🏥</div>
-              <h3>Sosial & Kesehatan</h3>
-              <p>Bedah rumah/ruko tidak layak huni, santunan janda dan duafa, paket sembako, sunatan massal, air bersih, hingga pengobatan gratis.</p>
+              <h3>Sosial &amp; kesehatan</h3>
+              <p>
+                Bedah rumah tidak layak huni, santunan janda dan duafa, paket sembako,
+                sunatan massal, akses air bersih, hingga pengobatan gratis.
+              </p>
+              <span class="pilar-tag">Layanan warga</span>
             </div>
-            <span class="program-tag">Layanan Warga</span>
-          </article>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="sec" id="sinergi" aria-labelledby="sinergi-judul">
+      <div class="wrap" data-reveal>
+        <p class="sec-label">
+          <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M5 3l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Sinergi
+        </p>
+        <div class="sec-head">
+          <h2 id="sinergi-judul">Dikuatkan oleh jaringan lembaga zakat dan mitra sosial</h2>
+          <p class="sec-note">
+            Keberhasilan KAMZA dibangun di atas gotong royong Unit Pengumpul Zakat
+            dan Lembaga Amil Zakat yang bergerak bersama untuk kemaslahatan warga.
+          </p>
+        </div>
+
+        <div class="sinergi-wall">
+          <div class="sinergi-cell">
+            <img src="assets/baznas.png" width="240" height="181" loading="lazy" decoding="async" alt="Logo BAZNAS Jember" />
+            <span>BAZNAS Jember</span>
+          </div>
+          <div class="sinergi-cell">
+            <img src="assets/nurul-falah.png" width="400" height="400" loading="lazy" decoding="async" alt="Logo Lazis Nurul Falah" />
+            <span>Lazis Nurul Falah</span>
+          </div>
+          <div class="sinergi-cell">
+            <img src="assets/nurul-hayat.png" width="400" height="145" loading="lazy" decoding="async" alt="Logo Lazis Nurul Hayat" />
+            <span>Lazis Nurul Hayat</span>
+          </div>
+          <div class="sinergi-cell">
+            <img src="assets/yatim-mandiri.png" width="240" height="240" loading="lazy" decoding="async" alt="Logo Yatim Mandiri" />
+            <span>Yatim Mandiri</span>
+          </div>
+          <div class="sinergi-cell">
+            <img src="assets/lazisnu.png" width="400" height="225" loading="lazy" decoding="async" alt="Logo NU Care LAZISNU" />
+            <span>NU Care LAZISNU</span>
+          </div>
+          <div class="sinergi-cell">
+            <img src="assets/ybm.png" width="400" height="190" loading="lazy" decoding="async" alt="Logo YBM Yayasan Baitul Maal" />
+            <span>YBM Yayasan Baitul Maal</span>
+          </div>
+          <div class="sinergi-cell">
+            <img src="assets/ydsf.png" width="240" height="99" loading="lazy" decoding="async" alt="Logo YDSF" />
+            <span>YDSF</span>
+          </div>
+          <div class="sinergi-cell">
+            <span class="logo-mono" aria-hidden="true">LR</span>
+            <span>Lazis Rizqi</span>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="cta-band reveal" aria-labelledby="cta-title">
-      <div>
-        <h2 id="cta-title">Mari bersinergi membangun Dusun Paceh yang lebih mandiri.</h2>
-        <p>Hubungi pengelola KAMZA untuk informasi program, kunjungan lokasi, atau peluang kolaborasi bersama lembaga zakat dan mitra sosial.</p>
+    <section class="sec" id="kontribusi" aria-labelledby="kontribusi-judul">
+      <div class="wrap" data-reveal>
+        <p class="sec-label">
+          <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M5 3l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Kontribusi
+        </p>
+        <div class="sec-head">
+          <h2 id="kontribusi-judul">Tiga langkah menyalurkan zakat, infak, dan sedekah</h2>
+          <p class="sec-note">
+            Baik dari muzakki perorangan maupun lembaga — semua disambut dan diarahkan
+            ke program yang paling dibutuhkan warga.
+          </p>
+        </div>
+
+        <ol class="langkah-list">
+          <li class="langkah">
+            <h3>Hubungi pengelola</h3>
+            <p>Sapa pengelola KAMZA lewat WhatsApp untuk bertanya tentang program yang sedang berjalan.</p>
+          </li>
+          <li class="langkah">
+            <h3>Tentukan bentuk dukungan</h3>
+            <p>Pilih salurannya: zakat, infak, sedekah, atau kolaborasi program bersama lembaga mitra.</p>
+          </li>
+          <li class="langkah">
+            <h3>Salurkan dan lihat dampaknya</h3>
+            <p>Dana tersalur ke pendidikan, usaha keluarga, dan layanan sosial di Dusun Paceh dan sekitarnya.</p>
+          </li>
+        </ol>
       </div>
-      <a class="btn btn-primary" href="https://api.whatsapp.com/send?phone=6281336661466" target="_blank" rel="noopener">💬 Hubungi WhatsApp</a>
+    </section>
+
+    <section class="sec" id="tanya" aria-labelledby="tanya-judul">
+      <div class="wrap" data-reveal>
+        <p class="sec-label">
+          <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M5 3l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Tanya jawab
+        </p>
+        <div class="sec-head">
+          <h2 id="tanya-judul">Pertanyaan yang sering masuk</h2>
+        </div>
+
+        <div class="faq-list">
+          <details>
+            <summary>Apa itu KAMZA?<span class="faq-plus" aria-hidden="true"></span></summary>
+            <p>
+              Kampung Zakat Terpadu (KAMZA) Dusun Paceh adalah program binaan Kantor Kementerian
+              Agama Kabupaten Jember yang ditetapkan 15 Maret 2018 dan diresmikan 31 Maret 2018
+              oleh Kakanwil Kemenag Provinsi Jawa Timur.
+            </p>
+          </details>
+          <details>
+            <summary>Siapa yang mengelolanya?<span class="faq-plus" aria-hidden="true"></span></summary>
+            <p>
+              Pengelolaan berada di bawah arahan Bapak Amiruddin, S.Pd. selaku Sekretaris
+              Direktur/Direktur, bersama tokoh masyarakat dan jejaring lembaga zakat mitra.
+            </p>
+          </details>
+          <details>
+            <summary>Di mana lokasinya?<span class="faq-plus" aria-hidden="true"></span></summary>
+            <p>
+              Dusun Paceh, Desa Jambearum, Kecamatan Sumberjambe, Kabupaten Jember, Jawa Timur.
+              Titik lokasinya bisa dibuka lewat tautan peta di bagian bawah halaman ini.
+            </p>
+          </details>
+          <details>
+            <summary>Bagaimana cara menyalurkan zakat, infak, atau sedekah?<span class="faq-plus" aria-hidden="true"></span></summary>
+            <p>
+              Hubungi pengelola melalui WhatsApp. Anda akan diarahkan ke program yang sedang
+              berjalan atau ke lembaga zakat mitra, sesuai niat dan jenis dana Anda.
+            </p>
+          </details>
+          <details>
+            <summary>Bisakah berkunjung atau mengajukan kolaborasi program?<span class="faq-plus" aria-hidden="true"></span></summary>
+            <p>
+              Bisa. KAMZA terbuka untuk kunjungan lokasi dan kolaborasi program bersama LAZ,
+              UPZ, maupun lembaga sosial lain. Ajukan lewat WhatsApp atau Instagram pengelola.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" aria-labelledby="cta-judul">
+      <div class="wrap cta-in" data-reveal>
+        <div>
+          <h2 id="cta-judul">Mari bersinergi membangun Dusun Paceh yang lebih mandiri.</h2>
+          <p>
+            Hubungi pengelola KAMZA untuk informasi program, kunjungan lokasi,
+            atau peluang kolaborasi bersama lembaga zakat dan mitra sosial.
+          </p>
+        </div>
+        <div class="cta-actions">
+          <a class="btn btn-putih" href="https://api.whatsapp.com/send?phone=6281336661466" target="_blank" rel="noopener">Hubungi via WhatsApp
+            <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a class="btn btn-garis" href="https://maps.app.goo.gl/zhAtB4PnGNdUTpLe9" target="_blank" rel="noopener">Lihat lokasi di peta</a>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="footer-inner">
+  <footer class="footer">
+    <div class="wrap footer-in">
       <div>
         <div class="footer-brand">
-          <img src="logo-kampung-zakat.png" alt="Logo KAMZA" />
+          <img src="assets/kamza-mark.png" width="42" height="48" alt="Logo KAMZA" />
           <div>
-            <h2>KAMZA</h2>
-            <span>Kampung Zakat Terpadu Dusun Paceh</span>
+            <strong>KAMZA</strong>
+            <small>Kampung Zakat Terpadu Dusun Paceh</small>
           </div>
         </div>
-        <p>Dusun Paceh, Desa Jambearum, Kecamatan Sumberjambe, Kabupaten Jember, Jawa Timur. Binaan Kantor Kementerian Agama Kabupaten Jember.</p>
+        <p>
+          Dusun Paceh, Desa Jambearum, Kecamatan Sumberjambe, Kabupaten Jember, Jawa Timur.
+          Program binaan Kantor Kementerian Agama Kabupaten Jember.
+        </p>
       </div>
 
-      <div class="footer-links" aria-label="Tautan kontak">
-        <a href="https://maps.app.goo.gl/zhAtB4PnGNdUTpLe9" target="_blank" rel="noopener">📍 Lokasi</a>
-        <a href="https://www.instagram.com/kampung.zakat" target="_blank" rel="noopener">📸 Instagram</a>
-        <a href="https://api.whatsapp.com/send?phone=6281336661466" target="_blank" rel="noopener">💬 WhatsApp</a>
-      </div>
+      <nav class="footer-nav" aria-label="Tautan kontak">
+        <a href="https://api.whatsapp.com/send?phone=6281336661466" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 12a9 9 0 0 1-13.4 7.8L3 21l1.3-4.5A9 9 0 1 1 21 12Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M8.5 9.5c.5 2.5 3.5 5.5 6 6l1.5-1.5-2-1.5-1 .5c-1-.5-2-1.5-2.5-2.5l.5-1-1.5-2-1 2Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+          WhatsApp
+        </a>
+        <a href="https://www.instagram.com/kampung.zakat" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="4.5" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.7"/><circle cx="17.2" cy="6.8" r="1.2" fill="currentColor"/></svg>
+          Instagram
+        </a>
+        <a href="https://maps.app.goo.gl/zhAtB4PnGNdUTpLe9" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21s-6.5-5.3-6.5-10a6.5 6.5 0 1 1 13 0c0 4.7-6.5 10-6.5 10Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><circle cx="12" cy="11" r="2.3" stroke="currentColor" stroke-width="1.7"/></svg>
+          Lokasi di peta
+        </a>
+      </nav>
     </div>
 
-    <p class="copyright">&copy; 2026 KAMZA Dusun Paceh. Semua Hak Dilindungi.</p>
+    <div class="wrap footer-bawah">
+      <span>&copy; <span id="tahun">2026</span> KAMZA Dusun Paceh. Semua hak dilindungi.</span>
+      <span>Silaturahmi &amp; bincang santai — optimalisasi pengelolaan zakat.</span>
+    </div>
   </footer>
+
+  <script>
+    document.documentElement.classList.add('js');
+
+    // menu mobile
+    var menuBtn = document.querySelector('.menu-btn');
+    var menu = document.getElementById('menu');
+    if (menuBtn && menu) {
+      menuBtn.addEventListener('click', function () {
+        var terbuka = menu.classList.toggle('open');
+        menuBtn.setAttribute('aria-expanded', String(terbuka));
+        menuBtn.textContent = terbuka ? 'Tutup' : 'Menu';
+      });
+      menu.addEventListener('click', function (e) {
+        if (e.target.closest('a')) {
+          menu.classList.remove('open');
+          menuBtn.setAttribute('aria-expanded', 'false');
+          menuBtn.textContent = 'Menu';
+        }
+      });
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && menu.classList.contains('open')) {
+          menu.classList.remove('open');
+          menuBtn.setAttribute('aria-expanded', 'false');
+          menuBtn.textContent = 'Menu';
+          menuBtn.focus();
+        }
+      });
+    }
+
+    // reveal saat scroll
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (en) {
+          if (en.isIntersecting) {
+            en.target.classList.add('terlihat');
+            io.unobserve(en.target);
+          }
+        });
+      }, { threshold: 0.12 });
+      document.querySelectorAll('[data-reveal]').forEach(function (el) { io.observe(el); });
+
+      // tanda nav aktif
+      var peta = { profil: null, program: null, sinergi: null, kontribusi: null, tanya: null };
+      Object.keys(peta).forEach(function (id) {
+        var sec = document.getElementById(id);
+        var link = document.querySelector('.menu a[href="#' + id + '"]');
+        if (sec && link) peta[id] = { sec: sec, link: link };
+      });
+      var ioNav = new IntersectionObserver(function (entries) {
+        entries.forEach(function (en) {
+          Object.keys(peta).forEach(function (id) {
+            if (peta[id].sec === en.target) {
+              if (en.isIntersecting) peta[id].link.setAttribute('aria-current', 'true');
+              else peta[id].link.removeAttribute('aria-current');
+            }
+          });
+        });
+      }, { rootMargin: '-40% 0px -55% 0px' });
+      Object.keys(peta).forEach(function (id) { ioNav.observe(peta[id].sec); });
+    } else {
+      document.querySelectorAll('[data-reveal]').forEach(function (el) {
+        el.classList.add('terlihat');
+      });
+    }
+
+    // tahun berjalan
+    document.getElementById('tahun').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
